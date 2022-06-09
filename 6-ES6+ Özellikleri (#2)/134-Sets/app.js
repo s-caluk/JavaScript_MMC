@@ -1,7 +1,7 @@
 
 
-// Setler = yani Kümeler , array ve map lere  benziyor.
-// Farki: bir degeri sadece bir kez tasiyor. "2" degeri sadece 1 kez verilebiliyor.
+Setler = yani Kümeler , array ve map lere  benziyor.
+Farki: bir degeri sadece bir kez tasiyor. "2" degeri sadece 1 kez verilebiliyor.
 ==========================================================================
 
 const myset = new Set();
