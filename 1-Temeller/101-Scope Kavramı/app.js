@@ -1,4 +1,4 @@
-// Scope(kapsam) Kavramı bize bir degiskenin nerelerde var olabilecegini söyler!3 scope var.
+Scope(kapsam) Kavramı bize bir degiskenin nerelerde var olabilecegini söyler!3 scope var.
 
 1) global scope: window üzerindeki kisimdir. yani herhangi bir function yada if durumunun icinde degil!
 
