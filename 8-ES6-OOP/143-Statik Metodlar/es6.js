@@ -28,3 +28,7 @@ class Matematik {
 // Object.create();                     // aslinda önceden class üzerinden static fonksiyona ulasmayi kullanmistik. bsp bu.
 
 console.log(Math.sqrt(4));
+
+
+
+

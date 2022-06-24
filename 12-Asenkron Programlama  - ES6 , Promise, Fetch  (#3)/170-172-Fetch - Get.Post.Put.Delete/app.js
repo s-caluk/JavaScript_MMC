@@ -1,6 +1,23 @@
+
+
+get-post-put-delete fonsiyonlarinin icerisinde,
+fetch-promise yapisi kullanilarak,
+uzak datanin üzerinde oynama yapacagiz.
+
+böylece cok hizli "asenkron" islemlerinizi , 
+veri alma verme islemlerinizi gerceklestirebiliyorsunuz.
+ 
+Get: uzak veriyi okursun.
+Post: uzak veriye ekleme yaparsin. Olmayani ekler.
+Put: Olan veride güncelleme yaparsin.
+delete: veriyi diler.
+
+ajax ile yaptiklarimizin aynisini, fetch ile daha kisa yollardan yaptik!
+==================================================================
+
 class Request {
 
-    get(url){ // Get Request
+    get(url){                                     // Get Request
         return new Promise((resolve,reject)=>{
             fetch(url)
             .then(response => response.json())
@@ -14,7 +31,7 @@ class Request {
     post(url,data){
 
         return new Promise((resolve,reject) => {
-            fetch(url,{
+            fetch(url,{                                //bu kismi jsonplaceholder sitesinden aldi
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {
@@ -25,10 +42,7 @@ class Request {
             .then(data => resolve(data))
             .catch(err => reject(err));
 
-
         })
-        
-
     }
 
     put(url,data){
@@ -66,13 +80,13 @@ class Request {
 const request = new Request();
 
 // request.get("https://jsonplaceholder.typicode.com/albums")
-// .then(albums => {
-    
+// .then(albums => {  
 //     console.log(albums);
 // })
 // .catch(err => console.log(err));
 
-// request.post("https://jsonplaceholder.typicode.com/albums",{userId:1,title:"Thriller"})
+
+// request.post("https://jsonplaceholder.typicode.com/albums",{userId:1,title:"Thriller"})     //100 tane album vardi 101.ekle
 // .then(newAlbum => console.log(newAlbum))
 // .catch(err => console.log(err));
 
@@ -80,7 +94,6 @@ const request = new Request();
 // request.put("https://jsonplaceholder.typicode.com/albums/10",{userId:10,title:"Tarkan Karma"})
 // .then(album => console.log(album))
 // .catch(err => console.log(err));
-
 
 
 // request.delete("https://jsonplaceholder.typicode.com/albums/1")
