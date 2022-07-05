@@ -1,5 +1,5 @@
 
-167------------------------------
+167-----------------------------------_______________
 
 Callback´lerin dezavantajlarini yok ketmek icin ES6 ile promise gibi yapilar geldi.
 callback cehennemi diyorlarmis,hala kullananlar var! callback e alternatiftir promise.
